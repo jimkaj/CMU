@@ -1,12 +1,20 @@
 [project]
 name = "cmu"
 version = "0.1.0"
-description = "Add your description here"
+description = "Files for the Carnegie Mellon Agentic AI Certificate Program"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "accelerate>=1.13.0",
     "matplotlib>=3.10.9",
     "pandas>=3.0.3",
     "scikit-learn>=1.8.0",
     "seaborn>=0.13.2",
+    "torch>=2.12.0",
+    "transformers>=5.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
 ]
